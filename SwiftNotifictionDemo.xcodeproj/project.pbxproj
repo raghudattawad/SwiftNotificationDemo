@@ -47,6 +47,7 @@
 		91761B7D218B44E700CE208E /* SwiftNotifictionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNotifictionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91761B81218B44E700CE208E /* SwiftNotifictionDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNotifictionDemoUITests.swift; sourceTree = "<group>"; };
 		91761B83218B44E700CE208E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91761B8F218B4DD700CE208E /* SwiftNotifictionDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftNotifictionDemo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		91761B60218B44E600CE208E /* SwiftNotifictionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				91761B8F218B4DD700CE208E /* SwiftNotifictionDemo.entitlements */,
 				91761B61218B44E600CE208E /* AppDelegate.swift */,
 				91761B63218B44E600CE208E /* ViewController.swift */,
 				91761B65218B44E600CE208E /* Main.storyboard */,
@@ -193,6 +195,11 @@
 				TargetAttributes = {
 					91761B5D218B44E600CE208E = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					91761B71218B44E700CE208E = {
 						CreatedOnToolsVersion = 10.0;
@@ -432,7 +439,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftNotifictionDemo/SwiftNotifictionDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MRMWJP42PM;
 				INFOPLIST_FILE = SwiftNotifictionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,7 +458,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftNotifictionDemo/SwiftNotifictionDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MRMWJP42PM;
 				INFOPLIST_FILE = SwiftNotifictionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
